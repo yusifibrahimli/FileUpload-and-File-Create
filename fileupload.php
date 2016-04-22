@@ -7,7 +7,7 @@
        $fileType=$myFile['type'];
        $fileTmp=$myFile['tmp_name'];
        $ext=explode("/", $fileType);
-       $new_name="heci".rand().".".$ext[1];
+       $new_name="image".rand().".".$ext[1];
        move_uploaded_file($fileTmp, $myPath.$new_name);
 
 
